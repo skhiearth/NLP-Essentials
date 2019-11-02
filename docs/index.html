@@ -13116,14 +13116,14 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="SMS-Spam-Classification">SMS Spam Classification<a class="anchor-link" href="#SMS-Spam-Classification">&#182;</a></h1>
+<h1 id="SMS-Spam-Classification">SMS Spam Classification<a class="anchor-link" href="#SMS-Spam-Classification">&#182;</a></h1><h3 id="Github:-https://github.com/skhiearth/SMS-Spam-Classification-NLP">Github: <a href="https://github.com/skhiearth/SMS-Spam-Classification-NLP">https://github.com/skhiearth/SMS-Spam-Classification-NLP</a><a class="anchor-link" href="#Github:-https://github.com/skhiearth/SMS-Spam-Classification-NLP">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="The-SMS-Spam-Collection-is-a-public-set-of-SMS-labeled-messages-that-have-been-collected-for-mobile-phone-spam-research.-It-contains-one-set-of-SMS-messages-in-English-of-5,574-messages,-tagged-acording-being-ham-(legitimate)-or-spam.">The SMS Spam Collection is a public set of SMS labeled messages that have been collected for mobile phone spam research. It contains one set of SMS messages in English of 5,574 messages, tagged acording being ham (legitimate) or spam.<a class="anchor-link" href="#The-SMS-Spam-Collection-is-a-public-set-of-SMS-labeled-messages-that-have-been-collected-for-mobile-phone-spam-research.-It-contains-one-set-of-SMS-messages-in-English-of-5,574-messages,-tagged-acording-being-ham-(legitimate)-or-spam.">&#182;</a></h2>
+<h2 id="The-SMS-Spam-Collection-is-a-public-set-of-SMS-labeled-messages-that-have-been-collected-for-mobile-phone-spam-research.-It-contains-one-set-of-SMS-messages-in-English-of-5,574-messages,-tagged-acording-being-ham-(legitimate)-or-spam.">The SMS Spam Collection is a public set of SMS labeled messages that have been collected for mobile phone spam research. It contains one set of SMS messages in English of 5,574 messages, tagged acording being ham (legitimate) or spam.<a class="anchor-link" href="#The-SMS-Spam-Collection-is-a-public-set-of-SMS-labeled-messages-that-have-been-collected-for-mobile-phone-spam-research.-It-contains-one-set-of-SMS-messages-in-English-of-5,574-messages,-tagged-acording-being-ham-(legitimate)-or-spam.">&#182;</a></h2><h3 id="Dataset-Link:-https://archive.ics.uci.edu/ml/datasets/sms+spam+collection">Dataset Link: <a href="https://archive.ics.uci.edu/ml/datasets/sms+spam+collection">https://archive.ics.uci.edu/ml/datasets/sms+spam+collection</a><a class="anchor-link" href="#Dataset-Link:-https://archive.ics.uci.edu/ml/datasets/sms+spam+collection">&#182;</a></h3><h3 id="Dataset-References:-http://www.dt.fee.unicamp.br/~tiago/smsspamcollection/">Dataset References: <a href="http://www.dt.fee.unicamp.br/~tiago/smsspamcollection/">http://www.dt.fee.unicamp.br/~tiago/smsspamcollection/</a><a class="anchor-link" href="#Dataset-References:-http://www.dt.fee.unicamp.br/~tiago/smsspamcollection/">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -13143,7 +13143,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">rawData</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;SMSSpamCollection&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
@@ -13151,26 +13151,6 @@ div#notebook {
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[1]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>&#34;ham\tGo until jurong point, crazy.. Available only in bugis n great world la e buffet... Cine there got amore wat...\nham\tOk lar... Joking wif u oni...\nspam\tFree entry in 2 a wkly comp to win FA Cup final tkts 21st May 2005. Text FA to 87121 to receive entry question(std txt rate)T&amp;C&#39;s apply 084528100&#34;</pre>
-</div>
-
-</div>
-
 </div>
 </div>
 
@@ -13184,7 +13164,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">parsedData</span> <span class="o">=</span> <span class="n">rawData</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\t</span><span class="s1">&#39;</span><span class="p">,</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span> <span class="c1"># Replace tab characters with new-line characters</span>
@@ -13195,33 +13175,10 @@ div#notebook {
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[2]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>[&#39;ham&#39;,
- &#39;Go until jurong point, crazy.. Available only in bugis n great world la e buffet... Cine there got amore wat...&#39;,
- &#39;ham&#39;,
- &#39;Ok lar... Joking wif u oni...&#39;]</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">labels</span> <span class="o">=</span> <span class="n">parsedData</span><span class="p">[</span><span class="mi">0</span><span class="p">::</span><span class="mi">2</span><span class="p">]</span> <span class="c1"># Every second element starting from the 0th index</span>
@@ -13232,25 +13189,6 @@ div#notebook {
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>[&#39;ham&#39;, &#39;ham&#39;, &#39;spam&#39;, &#39;ham&#39;]
-[&#39;Go until jurong point, crazy.. Available only in bugis n great world la e buffet... Cine there got amore wat...&#39;, &#39;Ok lar... Joking wif u oni...&#39;, &#34;Free entry in 2 a wkly comp to win FA Cup final tkts 21st May 2005. Text FA to 87121 to receive entry question(std txt rate)T&amp;C&#39;s apply 08452810075over18&#39;s&#34;, &#39;U dun say so early hor... U c already then say...&#39;]
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -13624,7 +13562,7 @@ dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[31]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">count_punc</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
@@ -13664,7 +13602,7 @@ Ham: Punctuation Percentage Average = 7.4459067357512625 and Average Length = 58
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[31]:</div>
+    <div class="prompt output_prompt">Out[12]:</div>
 
 
 
@@ -13757,7 +13695,7 @@ Ham: Punctuation Percentage Average = 7.4459067357512625 and Average Length = 58
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Implementing-the-Count-Vectorizer-and-TFIDF-Vectorizer">Implementing the Count Vectorizer and TFIDF Vectorizer<a class="anchor-link" href="#Implementing-the-Count-Vectorizer-and-TFIDF-Vectorizer">&#182;</a></h3>
+<h3 id="Before-implementing-the-vectorizers,-we-split-that-data-into-training-and-test-sets">Before implementing the vectorizers, we split that data into training and test sets<a class="anchor-link" href="#Before-implementing-the-vectorizers,-we-split-that-data-into-training-and-test-sets">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -13766,17 +13704,267 @@ Ham: Punctuation Percentage Average = 7.4459067357512625 and Average Length = 58
 <div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.feature_extraction.text</span> <span class="k">import</span> <span class="n">CountVectorizer</span>
-<span class="kn">from</span> <span class="nn">sklearn.feature_extraction.text</span> <span class="k">import</span> <span class="n">TfidfVectorizer</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="k">import</span> <span class="n">train_test_split</span>
 
-<span class="n">countvect</span> <span class="o">=</span> <span class="n">CountVectorizer</span><span class="p">(</span><span class="n">analyzer</span> <span class="o">=</span> <span class="n">clean_text</span><span class="p">)</span>
+<span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">df</span><span class="p">[[</span><span class="s1">&#39;body&#39;</span><span class="p">,</span> <span class="s1">&#39;body_len&#39;</span><span class="p">,</span> <span class="s1">&#39;punc%&#39;</span><span class="p">]],</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;label&#39;</span><span class="p">],</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.2</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Implementing-the-TFIDF-Vectorizer">Implementing the TFIDF Vectorizer<a class="anchor-link" href="#Implementing-the-TFIDF-Vectorizer">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.feature_extraction.text</span> <span class="k">import</span> <span class="n">TfidfVectorizer</span>
+
 <span class="n">vect</span> <span class="o">=</span> <span class="n">TfidfVectorizer</span><span class="p">(</span><span class="n">analyzer</span> <span class="o">=</span> <span class="n">clean_text</span><span class="p">)</span>
+<span class="n">tfidf_total</span> <span class="o">=</span> <span class="n">vect</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;body&#39;</span><span class="p">])</span> <span class="c1"># Used for fitting on the whole model later</span>
+<span class="n">tfidf_vect_fit</span> <span class="o">=</span> <span class="n">vect</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">[</span><span class="s1">&#39;body&#39;</span><span class="p">])</span>
 
-<span class="n">X_count</span> <span class="o">=</span> <span class="n">countvect</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;body&#39;</span><span class="p">])</span>
-<span class="n">X_tfidf</span> <span class="o">=</span> <span class="n">vect</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;body&#39;</span><span class="p">])</span>
+<span class="n">tfidf</span> <span class="o">=</span> <span class="n">tfidf_total</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;body&#39;</span><span class="p">])</span> <span class="c1"># Used for fitting on the whole model later</span>
+<span class="n">tfidf_train</span> <span class="o">=</span> <span class="n">tfidf_vect_fit</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">X_train</span><span class="p">[</span><span class="s1">&#39;body&#39;</span><span class="p">])</span>
+<span class="n">tfidf_test</span> <span class="o">=</span> <span class="n">tfidf_vect_fit</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">X_test</span><span class="p">[</span><span class="s1">&#39;body&#39;</span><span class="p">])</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="n">X_count</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span> 
-<span class="nb">print</span><span class="p">(</span><span class="n">X_tfidf</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span> 
+<span class="n">total_vect</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">df</span><span class="p">[[</span><span class="s1">&#39;body_len&#39;</span><span class="p">,</span> <span class="s1">&#39;punc%&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">),</span> 
+           <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">tfidf</span><span class="o">.</span><span class="n">toarray</span><span class="p">())],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span> <span class="c1"># Used for fitting on the whole model later</span>
+<span class="n">X_train_vect</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">X_train</span><span class="p">[[</span><span class="s1">&#39;body_len&#39;</span><span class="p">,</span> <span class="s1">&#39;punc%&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">),</span> 
+           <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">tfidf_train</span><span class="o">.</span><span class="n">toarray</span><span class="p">())],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">X_test_vect</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">X_test</span><span class="p">[[</span><span class="s1">&#39;body_len&#39;</span><span class="p">,</span> <span class="s1">&#39;punc%&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">),</span> 
+           <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">tfidf_test</span><span class="o">.</span><span class="n">toarray</span><span class="p">())],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="n">X_train_vect</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[14]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>body_len</th>
+      <th>punc%</th>
+      <th>0</th>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+      <th>4</th>
+      <th>5</th>
+      <th>6</th>
+      <th>7</th>
+      <th>...</th>
+      <th>7852</th>
+      <th>7853</th>
+      <th>7854</th>
+      <th>7855</th>
+      <th>7856</th>
+      <th>7857</th>
+      <th>7858</th>
+      <th>7859</th>
+      <th>7860</th>
+      <th>7861</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>57</td>
+      <td>5.3</td>
+      <td>0.195276</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>29</td>
+      <td>3.4</td>
+      <td>0.000000</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>55</td>
+      <td>7.3</td>
+      <td>0.000000</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>31</td>
+      <td>6.5</td>
+      <td>0.000000</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>26</td>
+      <td>3.8</td>
+      <td>0.000000</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+  </tbody>
+</table>
+<p>5 rows × 7864 columns</p>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="5.-Classification">5. Classification<a class="anchor-link" href="#5.-Classification">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="We-implement-Machine-Learning-Classification-models-on-the-dataset-to-determine-if-a-given-message-is-spam-or-ham.">We implement Machine Learning Classification models on the dataset to determine if a given message is spam or ham.<a class="anchor-link" href="#We-implement-Machine-Learning-Classification-models-on-the-dataset-to-determine-if-a-given-message-is-spam-or-ham.">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="k">import</span> <span class="n">RandomForestClassifier</span><span class="p">,</span> <span class="n">GradientBoostingClassifier</span>
+<span class="kn">from</span> <span class="nn">sklearn.naive_bayes</span> <span class="k">import</span> <span class="n">GaussianNB</span>
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="k">import</span> <span class="n">precision_recall_fscore_support</span> <span class="k">as</span> <span class="n">score</span>
+
+<span class="n">rf</span> <span class="o">=</span> <span class="n">RandomForestClassifier</span><span class="p">(</span><span class="n">n_estimators</span><span class="o">=</span><span class="mi">150</span><span class="p">,</span> <span class="n">max_depth</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">n_jobs</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="n">rf_model</span> <span class="o">=</span> <span class="n">rf</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train_vect</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+<span class="n">y_pred</span> <span class="o">=</span> <span class="n">rf_model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test_vect</span><span class="p">)</span>
+
+<span class="n">precision</span><span class="p">,</span> <span class="n">recall</span><span class="p">,</span> <span class="n">fscore</span><span class="p">,</span> <span class="n">train_support</span> <span class="o">=</span> <span class="n">score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">,</span> <span class="n">pos_label</span><span class="o">=</span><span class="s1">&#39;spam&#39;</span><span class="p">,</span> <span class="n">average</span><span class="o">=</span><span class="s1">&#39;binary&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Precision: </span><span class="si">{}</span><span class="s1"> / Recall: </span><span class="si">{}</span><span class="s1"> / Accuracy: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="n">precision</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="nb">round</span><span class="p">(</span><span class="n">recall</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="nb">round</span><span class="p">((</span><span class="n">y_pred</span><span class="o">==</span><span class="n">y_test</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">/</span><span class="nb">len</span><span class="p">(</span><span class="n">y_pred</span><span class="p">),</span> <span class="mi">3</span><span class="p">)))</span>
 </pre></div>
 
     </div>
@@ -13793,8 +13981,7 @@ Ham: Punctuation Percentage Average = 7.4459067357512625 and Average Length = 58
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>(5572, 8917)
-(5572, 8917)
+<pre>Precision: 0.992 / Recall: 0.833 / Accuracy: 0.977
 </pre>
 </div>
 </div>
@@ -13805,25 +13992,99 @@ Ham: Punctuation Percentage Average = 7.4459067357512625 and Average Length = 58
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">X_count_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">df</span><span class="p">[[</span><span class="s1">&#39;label&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">),</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">X_count</span><span class="o">.</span><span class="n">toarray</span><span class="p">())],</span> <span class="n">axis</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">time</span> <span class="c1"># GradientBoostingClassifier seems to take a lot of time</span>
 
-<span class="n">X_tdidf_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">df</span><span class="p">[[</span><span class="s1">&#39;label&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">),</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">X_tfidf</span><span class="o">.</span><span class="n">toarray</span><span class="p">())],</span> <span class="n">axis</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">gb</span> <span class="o">=</span> <span class="n">GradientBoostingClassifier</span><span class="p">(</span><span class="n">n_estimators</span><span class="o">=</span><span class="mi">150</span><span class="p">,</span> <span class="n">max_depth</span><span class="o">=</span><span class="mi">11</span><span class="p">)</span>
+
+<span class="n">start</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+<span class="n">gb_model</span> <span class="o">=</span> <span class="n">gb</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train_vect</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+<span class="n">end</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+<span class="n">fit_time</span> <span class="o">=</span> <span class="p">(</span><span class="n">end</span> <span class="o">-</span> <span class="n">start</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">fit_time</span><span class="p">)</span>
+
+<span class="n">y_pred</span> <span class="o">=</span> <span class="n">gb_model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test_vect</span><span class="p">)</span>
+
+<span class="n">precision</span><span class="p">,</span> <span class="n">recall</span><span class="p">,</span> <span class="n">fscore</span><span class="p">,</span> <span class="n">train_support</span> <span class="o">=</span> <span class="n">score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">,</span> <span class="n">pos_label</span><span class="o">=</span><span class="s1">&#39;spam&#39;</span><span class="p">,</span> <span class="n">average</span><span class="o">=</span><span class="s1">&#39;binary&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Precision: </span><span class="si">{}</span><span class="s1"> / Recall: </span><span class="si">{}</span><span class="s1"> / Accuracy: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="n">precision</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="nb">round</span><span class="p">(</span><span class="n">recall</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="nb">round</span><span class="p">((</span><span class="n">y_pred</span><span class="o">==</span><span class="n">y_test</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">/</span><span class="nb">len</span><span class="p">(</span><span class="n">y_pred</span><span class="p">),</span> <span class="mi">3</span><span class="p">)))</span>
 </pre></div>
 
     </div>
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>212.88605499267578
+Precision: 0.923 / Recall: 0.88 / Accuracy: 0.974
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">nbClassifier</span> <span class="o">=</span> <span class="n">GaussianNB</span><span class="p">()</span>
+
+<span class="n">nbClassifier</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train_vect</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+<span class="n">y_pred</span> <span class="o">=</span> <span class="n">nbClassifier</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test_vect</span><span class="p">)</span>
+
+<span class="n">precision</span><span class="p">,</span> <span class="n">recall</span><span class="p">,</span> <span class="n">fscore</span><span class="p">,</span> <span class="n">train_support</span> <span class="o">=</span> <span class="n">score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">,</span> <span class="n">pos_label</span><span class="o">=</span><span class="s1">&#39;spam&#39;</span><span class="p">,</span> <span class="n">average</span><span class="o">=</span><span class="s1">&#39;binary&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Precision: </span><span class="si">{}</span><span class="s1"> / Recall: </span><span class="si">{}</span><span class="s1"> / Accuracy: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="n">precision</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="nb">round</span><span class="p">(</span><span class="n">recall</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="nb">round</span><span class="p">((</span><span class="n">y_pred</span><span class="o">==</span><span class="n">y_test</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">/</span><span class="nb">len</span><span class="p">(</span><span class="n">y_pred</span><span class="p">),</span> <span class="mi">3</span><span class="p">)))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Precision: 0.589 / Recall: 0.907 / Accuracy: 0.902
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Random-Forests-classifier-seems-to-be-the-best-fit-for-our-use-case-with-an-accuracy-of-97.7%-and-a-Precision-very-close-to-unity.-Now-we-train-the-whole-model-on-the-classifier.">Random Forests classifier seems to be the best fit for our use case with an accuracy of 97.7% and a Precision very close to unity. Now we train the whole model on the classifier.<a class="anchor-link" href="#Random-Forests-classifier-seems-to-be-the-best-fit-for-our-use-case-with-an-accuracy-of-97.7%-and-a-Precision-very-close-to-unity.-Now-we-train-the-whole-model-on-the-classifier.">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">rf_model</span> <span class="o">=</span> <span class="n">rf</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">total_vect</span><span class="p">,</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;label&#39;</span><span class="p">])</span>
 </pre></div>
 
     </div>
